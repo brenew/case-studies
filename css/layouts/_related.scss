@@ -1,0 +1,79 @@
+.related {
+    background-color: $tertiary-color;
+    
+    &--headline {
+        margin-bottom: 0;
+    }
+
+    &--cards {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: $spacer;
+
+        @media (min-width: $break-tablet) {
+            justify-content: center;
+        }
+        @media (min-width: $break-desktop) {
+            margin-top: $spacer*2;
+        }
+    }
+    &--card {
+        @media (min-width: 568px) {
+            width: 50%;
+        }        
+        @media (min-width: 768px) {
+            width: 33%;
+        }
+    }
+    &--card-inner {
+        display: block;
+        padding: $spacer $spacer*0.75;
+
+        @media (min-width: $break-desktop-wide) {
+            padding-left: $spacer;
+            padding-right: $spacer;
+        }
+
+        &:hover {
+            text-decoration: none;
+
+            .related--card-title {
+                color: $primary-color;
+            }
+            .related--card-image {
+                opacity: 0.25;
+            }
+        }
+    }
+    &--card-image-wrap {
+        background-color: $primary-color;
+    }
+    &--card-image {
+        transition: opacity .3s ease-in-out;
+    }
+    &--card-body {
+        padding: $spacer*1.25 0 0;
+    }
+    &--card-title {
+        color: $black;
+        font-size: $font-size*1.6;
+        margin: 0 0 $spacer*0.5;
+        text-transform: uppercase;
+
+        @media (min-width: $break-desktop) {
+            font-size: $font-size*1.8;
+        }
+    }
+    p.related--card-categories {
+        font-size: $font-size*1.4;
+        margin-bottom: 0;
+        position: relative;
+
+        > span:first-child {
+            border-bottom: 1px solid $primary-color;
+            padding-bottom: 6px;
+            padding-inline: 4px;
+        }
+    }
+
+}

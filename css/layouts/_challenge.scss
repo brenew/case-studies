@@ -1,0 +1,84 @@
+.case-study .challenge {
+    background-color: $tertiary-color;
+
+    @media (max-width: 1279px) {
+        background-size: contain;
+    }
+
+    .row {
+        align-items: center;
+        padding-bottom: $spacer*4;
+        
+        @media (min-width: 1024px) {
+            min-height: 315px;
+
+            &-challenge {
+                padding-top: $spacer*4;
+            }
+        }
+    }
+
+    &--number {
+        font-size: $font-size*20;
+        font-weight: 600;
+        left: 0;
+        opacity: 25%;
+        position: absolute;
+        top: 0;
+
+        @media (min-width: $break-desktop) {
+            font-size: $font-size*22.6;
+        }
+        &.step-one {
+            color: #596873;
+        }
+        &.step-two {
+            color: $primary-color;
+        }
+        &.step-three {
+            color: $black;
+        }        
+    }
+
+    &--text {
+        display: flex;
+        flex-direction: column;
+        height: 200px;
+        justify-content: center;
+        padding-left: $spacer*2;
+
+        @media (min-width: $break-desktop) {
+            height: 226px;
+        }
+    }
+
+    &--title {
+        font-size: $font-size*3.2;
+        font-weight: 600;
+        margin: 0;
+        line-height: 1;
+
+        @media (min-width: $break-desktop) {
+            font-size: $font-size*6;
+        }
+
+        &.step-one {
+            color: #596873;
+        }
+        &.step-two {
+            color: $primary-color;
+        }
+        &.step-three {
+            color: $black;
+        }
+    }
+    &--pre-title {
+        font-size: $font-size*2.4;
+        font-weight: 600;
+        line-height: 1;
+
+        @media (min-width: $break-desktop) {
+            font-size: $font-size*3.6;
+        }
+    }
+}

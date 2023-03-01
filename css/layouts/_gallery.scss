@@ -1,0 +1,75 @@
+.gallery {
+    background-color: $tertiary-color;
+
+    .gallery-slides {
+        margin-top: $spacer;
+
+        @media (min-width: $break-desktop) {
+            margin-top: $spacer*2;
+        }
+    }
+
+    &--card-image-wrap {
+        margin: 0 auto;
+        max-width: 1024px;
+    }
+    &--card-image {
+        margin: 0 auto;
+    }
+
+    // devices
+    &--device-item {
+        margin: 0 auto;
+        max-width: 1024px;
+        position:relative;
+        text-align: center;
+    }
+    &--device-image-wrap {
+        overflow:hidden;
+        position:absolute;
+
+        &.device-desktop {
+            height: 82%;
+            left: 6.5%;
+            top: 3.6%;
+            width: 87.1%;            
+        }
+        &.device-laptop {
+            height: 79%;
+            left: 14.2%;
+            top: 7.5%;
+            width: 71.9%;
+        }
+        &.device-phone-landscape {
+            height: 44%;
+            left: 25.3%;
+            top: 28%;
+            width: 51.7%;
+        }
+        &.device-phone-portrait {
+            height: 89%;
+            left: 37.4%;
+            top: 6.5%;
+            width: 25.4%;
+        }
+        &.device-tablet-landscape {
+            height: 85%;
+            left: 16.1%;
+            top: 7.5%;
+            width: 68%;
+        }
+        &.device-tablet-portrait {
+            height: 92%;
+            left: 31%;
+            top: 2%;
+            width: 38%;
+        }         
+    }
+    &--device-image {
+        margin: 0 auto;
+        position: relative;
+    }
+    &--image {
+        width: 100%;
+    }
+}

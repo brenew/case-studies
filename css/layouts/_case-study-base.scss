@@ -1,0 +1,149 @@
+.case-study {
+
+    .band {
+        padding-left: $spacer;
+        padding-right: $spacer;
+
+        @media (min-width: 1024px) {
+            padding-left: $spacer*2;
+            padding-right: $spacer*2;    
+        }
+    }
+
+    .band-doubled-bottom {
+        padding-top: 0;
+    }
+    .band-doubled-top {
+        padding-bottom: 0;
+    }
+
+    .container {
+        max-width: 100%;
+
+        @media (min-width: $break-desktop) {
+            max-width: $break-desktop;
+        }
+    }
+
+    &--narrow-text-wrap {
+        margin: 0 auto;
+        max-width: 800px;
+    }
+
+    &--headline {
+        color: $black;
+        font-weight: 600;
+        margin: 0 0 $spacer;
+    }
+
+    p.case-study--pre-title {
+        margin-bottom: 0;
+    }
+
+    p.case-study--copy, div.case-study--copy p {
+        margin-bottom: 0;
+    }
+
+    // slider
+    .slider {
+
+        &.placement-centered {
+            .slider-card--image-wrap {
+                text-align: center;
+            }
+        }        
+
+        &.placement-overflow {
+            overflow: hidden;
+            position: relative;
+
+            @media (min-width: $break-tablet) {
+                padding-left: $spacer*1;
+            }
+            @media (min-width: $break-desktop) {
+                padding-left: $spacer*5;
+            }
+
+            .slick-track {
+                display: flex;
+            }
+
+            .slick-slide + .slick-slide {
+                margin-left: 25px;
+
+                @media (min-width: $break-tablet) {
+                    margin-left: 50px;
+                }
+            }
+            .slick-arrow {
+                box-shadow: 0 0 16px rgba(0,0,0,.5);
+                top: 140px;
+            }
+
+            .slider--slides {
+                left: 30px;
+
+                @media (min-width: 1024px) {
+                    left: 50px;
+                }
+            }
+            .slider-prev {
+                visibility: hidden;
+            }
+            .slider-next {
+                right: $spacer;
+                
+                @media (min-width: $break-desktop) {
+                    right: $spacer*3;
+                }
+            }
+        }
+
+        .slick-arrow {
+            align-items: center;
+            background-color: $primary-color;
+            border: none;
+            border-radius: 100%;
+            cursor: pointer;
+            display: flex;
+            height: 40px;
+            justify-content: center;
+            position: absolute;
+            fill: white;
+            padding: 0;
+            top: 50%;
+            width: 40px;
+
+            svg {
+                height: 24px;
+                width: 24px;
+            }
+
+            @media (min-width: $break-tablet) {
+                height: 50px;
+                width: 50px;
+
+                svg {
+                    height: 32px;
+                    width: 32px;
+                }
+            }
+
+            @media (min-width: $break-desktop-wide) {
+                height: 73px;
+                width: 73px;
+
+                svg {
+                    height: auto;
+                    width: auto;
+                }
+            }
+        }
+        .slider-prev {
+            left: 0;
+        }
+        .slider-next {
+            right: 0;         
+        }
+    }
+}

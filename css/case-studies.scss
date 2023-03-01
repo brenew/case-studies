@@ -1,0 +1,34 @@
+// libraries - want these first so we can override variables
+@import "css/libs/_fontawesome"; 
+@import "css/libs/_icomoon";
+@import "css/libs/_bootstrap";
+
+// vars and mixins
+@import "css/global/base"; // base theme variables, maps, etc.
+
+@import "css/elements/main";
+@import "css/elements/links"; 
+@import "css/elements/headlines";
+@import "css/elements/buttons";
+@import "css/elements/forms";
+@import "css/elements/search-form";
+@import "css/elements/styled-underline"; 
+@import "css/elements/slick-slider";
+
+@import "layouts/hero";
+@import "layouts/case-study-base";
+@import "layouts/overview";
+@import "layouts/challenge";
+@import "layouts/features";
+@import "layouts/gallery";
+@import "layouts/highlights";
+@import "layouts/testimonial";
+@import "layouts/technology";
+@import "layouts/related";
+@import "layouts/newsletter"; 
+
+@import "css/elements/footer"; // footer is not critical
+
+@import "css/utilities/accessibility";
+@import "css/utilities/colors";
+@import "css/utilities/text-alignment";

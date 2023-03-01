@@ -1,0 +1,31 @@
+.case-study-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    @media (min-width: $break-tablet) {
+        grid-template-columns: 20% 20% 20% 20% 20%;
+    }
+
+    &--link {
+        display: block;
+        padding: $spacer;
+        text-align: center;
+    }
+    @media (max-width: 767px) {
+        &--link {
+            box-shadow: inset 0 0 4px rgba(0,0,0,.1);
+        }
+    }
+    @media (min-width: $break-tablet) {
+        &--link + &--link {
+            border-left: 1px solid $gray-lightest;
+        }    
+        &--link:nth-child(6n) {
+            border-left: none;
+        }
+        &--link:nth-child(-n+5) {
+            border-bottom: 1px solid $gray-lightest;
+        }    
+    }
+
+}

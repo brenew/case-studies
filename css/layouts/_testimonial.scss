@@ -1,0 +1,43 @@
+.testimonial {
+    background-color: $primary-color;
+
+    &--text-wrap {
+        color: $white;
+        margin: 0 auto;
+        max-width: 1140px;
+        text-align: center;
+    }
+    &--quote {
+        font-size: $font-size*1.6;
+        font-weight: 400;
+
+        @media (min-width: $break-tablet) {
+            font-size: $font-size*2.2;
+        }
+        @media (min-width: $break-desktop) {
+            font-size: $font-size*2.4;
+        }
+        @media (min-width: $break-desktop-wide) {
+            font-size: $font-size*2.6;
+        }
+    }
+    &--name {
+        font-size: $font-size*1.8;
+        margin: 0;
+
+        @media (min-width: $break-tablet) {
+            font-size: $font-size*2;
+        }
+        @media (min-width: $break-desktop-wide) {
+            font-size: $font-size*2.4;
+        }        
+    }
+    p.testimonial--title {
+        font-size: $font-size*1.6;
+        margin-bottom: 0;
+        
+        @media (min-width: $break-tablet) {
+            font-size: $font-size*1.8;
+        }        
+    }
+}

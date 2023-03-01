@@ -1,0 +1,57 @@
+.technology {
+
+    &--cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        @media (min-width: $break-tablet) {
+            margin-top: $spacer;
+        }
+        @media (min-width: $break-desktop) {
+            margin-top: $spacer*2;
+        }
+    }
+    &--card {
+        @media (min-width: 768px) {
+            width: 50%;
+        }
+
+        @media (min-width: 1024px) {
+            width: 25%;
+        }
+    }
+    &--card-inner {
+        padding: $spacer;
+        text-align: center;
+
+        @media (min-width: $break-desktop-wide) {
+            padding-left: $spacer*1.5;
+            padding-right: $spacer*1.5;
+        }
+    }
+    &--card-title {
+        color: $black;
+        font-size: $font-size*1.8;
+        margin: $spacer*0.5 0 $spacer;
+        text-transform: uppercase;
+
+        @media (min-width: $break-tablet) {
+            font-size: $font-size*2;
+        }
+        @media (min-width: $break-desktop) {
+            font-size: $font-size*2.4;
+        }
+        @media (min-width: $break-desktop-wide) {
+            font-size: $font-size*2.8;
+        }
+    }
+    div.technology--card-copy p {
+        font-size: $font-size*1.4;
+
+        @media (min-width: $break-tablet) {
+            font-size: $font-size*1.6;
+        }
+    }
+
+}

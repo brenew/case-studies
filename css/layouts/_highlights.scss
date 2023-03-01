@@ -1,0 +1,49 @@
+.highlights {
+
+    &--cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: $spacer;
+
+        @media (min-width: $break-desktop) {
+            margin-top: $spacer*2;
+        }
+    }
+    &--card {
+        @media (min-width: 768px) {
+            width: 50%;
+        }
+
+        @media (min-width: 1024px) {
+            width: 25%;
+        }
+    }
+    &--card-inner {
+        padding: $spacer;
+        text-align: center;
+
+        @media (min-width: $break-desktop-wide) {
+            padding-left: $spacer*1.5;
+            padding-right: $spacer*1.5;
+        }
+    }
+    &--card-title {
+        color: $primary-color;
+        font-size: $font-size*1.8;
+        margin: 0 0 $spacer;
+        text-transform: uppercase;
+
+        @media (min-width: $break-desktop) {
+            font-size: $font-size*2.2;
+        }
+    }
+    div.highlights--card-copy p {
+        font-size: $font-size*1.4;
+
+        @media (min-width: $break-tablet) {
+            font-size: $font-size*1.6;
+        }
+    }
+
+}

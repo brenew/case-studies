@@ -1,0 +1,122 @@
+.newsletter {
+    background-position: -275px 615px;
+    background-size: 445px;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    min-height: 300px;
+    padding: $spacer*2 $spacer $spacer*3;
+    position: relative;
+    flex-wrap: wrap;
+
+    .row {
+        > * {
+            position: relative;
+            z-index: 1;
+        }
+    }
+
+
+    @media (min-width: $break-mobile-wide) {
+        background-position: -370px 412px;
+        background-size: 600px;        
+    }
+
+    @media (min-width: $break-tablet-wide) {
+        background-size: 500px;
+        padding-inline: 22vw;
+        background-position: -200px -170px;
+    }    
+
+    .heading-item {
+        font-size: $font-size * 2.2;
+        line-height: 1.5;
+        margin-bottom: $spacer;
+        margin-top: 0;
+
+        @media (min-width: $break-mobile-wide) {
+            font-size: $font-size * 2.6;
+        }
+
+        @media (min-width: $break-tablet-wide) {
+            font-size: $font-size * 3.6;
+        }
+    }
+
+    &--pre-title {
+        text-transform: uppercase;
+        font-size: $font-size*1.6;
+        letter-spacing: 1.6px;
+        font-weight: $font-weight-bold;
+    }
+
+    .gform_wrapper.gravity-theme {
+        
+        form {
+            max-width: 720px;
+            margin-inline: auto;
+
+            input {
+                border: 2px solid $primary-color;
+                height: 60px;
+                border-radius: 2rem;
+            }
+        }
+
+        .gfield_required {
+            display: none;
+        }
+
+        .gform-button {
+            background-color: $primary-color--darker;
+            border-color: $primary-color--darker;
+            color: $white;
+            border-width: 2px;
+            -webkit-appearance: none;
+        }
+
+        .gform_footer.top_label {
+            display: none;
+        }
+
+        @media (max-width: 630px) {
+            .ginput_container_email {
+                margin-top: -14px;
+            }
+        }
+    }
+
+    .foreground-image {
+        min-height: 300px;
+        margin-bottom: -3rem;
+        margin-top: 2rem;
+        z-index: 0;
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        background-size: contain;
+        width: 100%;
+        height: 100%;
+
+        @media (min-width: $break-mobile-wide) {
+            margin-top: 3rem;
+            min-height: 330px;
+        }
+
+        @media (min-width: $break-tablet-wide) {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            margin-block: 0;
+            height: 115%;
+            min-height: 230px;
+        }
+
+        @media (min-width: ($break-desktop - 1) ) {
+            background-size: 32vw;
+        }
+
+        @media (min-width: 1600px) {
+            background-size: contain;
+        }
+    }
+}

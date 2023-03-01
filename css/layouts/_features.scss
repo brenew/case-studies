@@ -1,0 +1,71 @@
+.case-study .band.features {
+    @media (min-width: $break-tablet) {
+        padding-bottom: $spacer*3;
+    }
+    @media (min-width: $break-desktop) {
+        padding-top: $spacer*6;
+    }
+}
+
+.features-slider-band {
+    padding-bottom: $spacer*2;
+
+    @media (min-width: $break-tablet) {
+        padding-bottom: $spacer*3;
+    }
+    @media (min-width: $break-desktop) {
+        padding-bottom: $spacer*6;
+    }
+    .slider--slide {
+        height: auto;
+        max-width: 300px;
+
+        @media (min-width: $break-tablet) {
+            max-width: 400px;
+        }
+        @media (min-width: $break-desktop) {
+            max-width: 480px;
+        }
+        @media (min-width: $break-desktop-wide) {
+            max-width: 580px;
+        }
+        @media (min-width: 1900px) {
+            max-width: 672px;
+        }
+    }
+
+    .slider--slide:nth-child(even) {
+        background-color: $tertiary-color;
+        
+        .slider-card--pre-title {
+            color: $primary-color;
+        }
+    }
+    .slider--slide:nth-child(odd) {
+        background-color: #F0FFEE;
+        
+        .slider-card--pre-title {
+            color: $secondary-color;
+        }
+    }
+
+
+    .slider-card {
+        &--body {
+            padding: $spacer*1.5;
+
+            @media (min-width: $break-tablet) {
+                padding: $spacer*1.5 $spacer*2;
+            }
+        }
+
+        &--copy, &--copy p {
+            font-size: $font-size*1.4;
+            margin-bottom: 0;
+
+            @media (min-width: $break-tablet) {
+                font-size: $font-size*1.6;
+            }
+        }
+    }
+}
